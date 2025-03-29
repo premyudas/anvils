@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import './App.css'
-import {
-  createStaticNavigation,
-  useNavigation,
-} from '@react-navigation/native';
+// import {
+//   createStaticNavigation,
+//   useNavigation,
+// } from '@react-navigation/native';
 //import Home from 'src/pages/Home.tsx'
-import Login from 'src/pages/Login.tsx'
+// import Login from 'src/pages/Login.tsx'
 
 
 function App() {
