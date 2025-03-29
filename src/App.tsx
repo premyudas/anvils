@@ -12,6 +12,7 @@ import { Unity, useUnityContext } from 'react-unity-webgl'; // Import Unity WebG
 function App() {
   const [home, setHome] = useState(true)
   const [loggedIn, setLogin] = useState(false);
+  const [showLoginPage, setShowLoginPage] = useState(false);
   const [showUnity, setShowUnity] = useState(false); // state to toggle Unity component
 
   // Configure Unity context with the paths to your Unity build files
@@ -29,11 +30,12 @@ function App() {
           <button onClick={() => {
             setHome(!home)
             setShowUnity(false)
+            setShowLoginPage(false)
           }}>
             Home
           </button>
         }
-        
+
         {home &&
           <div>
             <div>
@@ -47,14 +49,15 @@ function App() {
             <div className="card">
               <button onClick={() => {
                 setLogin(!loggedIn)
-                setHome(!home)
+                setHome(false)
+                setShowLoginPage(true)
               }}>
                 Log in/sign up
               </button>
 
               <button onClick={() => {
-                setShowUnity(!showUnity)
-                setHome(!home)
+                setHome(false)
+                setShowUnity(true)
               }}>
                 Continue as Guest
               </button>
@@ -62,7 +65,7 @@ function App() {
           </div>
         }
 
-        {loggedIn && (
+        {showLoginPage && (
           <div>
             <p>Taking you to the login page!</p>
           </div>
