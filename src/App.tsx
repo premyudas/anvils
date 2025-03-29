@@ -1,11 +1,9 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import {
-  createStaticNavigation,
-  useNavigation,
-} from '@react-navigation/native';
+// import {
+//   createStaticNavigation,
+//   useNavigation,
+// } from '@react-navigation/native';
 //import Home from 'src/pages/Home.tsx'
 //import Login from 'src/pages/Login.tsx'
 
