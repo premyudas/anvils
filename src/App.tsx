@@ -11,10 +11,10 @@ function App() {
 
   // Configure Unity context with the paths to your Unity build files
   const { unityProvider } = useUnityContext({
-    loaderUrl: '/unityBuild/UncommonHacks2025Test4.loader.js',
-    dataUrl: '/unityBuild/UncommonHacks2025Test4.data',
-    frameworkUrl: '/unityBuild/UncommonHacks2025Test4.framework.js',
-    codeUrl: '/unityBuild/UncommonHacks2025Test4.wasm',
+    loaderUrl: '/unityBuild/AnvilsFirstIteration.loader.js',
+    dataUrl: '/unityBuild/AnvilsFirstIteration.data',
+    frameworkUrl: '/unityBuild/AnvilsFirstIteration.framework.js',
+    codeUrl: '/unityBuild/AnvilsFirstIteration.wasm',
   });
 
   return (
