@@ -15,10 +15,10 @@ function App() {
 
   return (
     <>
-      <h1>Vite + React</h1>
-      <p>Uncommon Hacks 2025
-        Anvils
-        Made by: Prem, Catarina, Andrea, Sasha, Surya</p>
+      <h1>Anvils</h1>
+      <p>Uncommon Hacks 2025 <br/>
+        Made by: Prem, Catarina, Andrea, Sasha, Surya <br/>
+      </p>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -26,9 +26,6 @@ function App() {
         <button>
           Home
         </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
       </div>
     </>
   )
