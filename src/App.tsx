@@ -1,17 +1,11 @@
 import { useState } from 'react'
 import './App.css'
 import { Unity, useUnityContext } from 'react-unity-webgl'; // Import Unity WebGL components
-// import {
-//   createStaticNavigation,
-//   useNavigation,
-// } from '@react-navigation/native';
-//import Home from 'src/pages/Home.tsx'
-//import Login from 'src/pages/Login.tsx'
-
+import AuthButtons from './components/login.tsx'
 
 function App() {
   const [home, setHome] = useState(true)
-  const [loggedIn, setLogin] = useState(false);
+  // const [loggedIn, setLogin] = useState(false);
   const [showLoginPage, setShowLoginPage] = useState(false);
   const [showUnity, setShowUnity] = useState(false); // state to toggle Unity component
 
@@ -45,14 +39,13 @@ function App() {
                 Made by: Prem, Catarina, Andrea, Sasha, Surya <br/>
               </p>
             </div>
-
+            
             <div className="card">
               <button onClick={() => {
-                setLogin(!loggedIn)
                 setHome(false)
                 setShowLoginPage(true)
               }}>
-                Log in/sign up
+                Log in / Sign up
               </button>
 
               <button onClick={() => {
@@ -67,7 +60,7 @@ function App() {
 
         {showLoginPage && (
           <div>
-            <p>Taking you to the login page!</p>
+            <AuthButtons/>
           </div>
         )}
 
