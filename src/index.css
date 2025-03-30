@@ -14,7 +14,7 @@
 }
 
 .App {
-  cursor: url('./public/cursor.png'), auto;
+  cursor: url('../public/grey_cursor.png'), auto;
 
 }
 
@@ -34,6 +34,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: #10110F;
+  cursor: url('/grey_cursor.png'), auto;
 }
 
 h1 {
@@ -55,7 +56,7 @@ button {
 }
 button:hover {
   border-color: #21ffff;
-  cursor: url('/assets/hover-cursor.png'), pointer;
+  cursor: url('/assets/grey_cursor.png'), pointer;
 }
 button:focus,
 button:focus-visible {
