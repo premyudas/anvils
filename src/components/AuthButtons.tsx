@@ -20,11 +20,11 @@ export default function AuthButtons({ home }: Props) {
       {!isAuthenticated ? (
         <button
           onClick={() =>
-            {
+            loginWithRedirect({
               appState: {
                 returnTo: "/unity"
               }
-            }
+            })
           }
         >
           Log In
