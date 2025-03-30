@@ -10,10 +10,10 @@ function App() {
   const [showUnity, setShowUnity] = useState(false); // state to toggle Unity component
 
   const { unityProvider, unload } = useUnityContext({
-    loaderUrl: '/unityBuild/AnvilsThirdIteration.loader.js',
-    dataUrl: '/unityBuild/AnvilsThirdIteration.data',
-    frameworkUrl: '/unityBuild/AnvilsThirdIteration.framework.js',
-    codeUrl: '/unityBuild/AnvilsThirdIteration.wasm',
+    loaderUrl: '/unityBuild/AnvilsFinalIteration.loader.js',
+    dataUrl: '/unityBuild/AnvilsFinalIteration.data',
+    frameworkUrl: '/unityBuild/AnvilsFinalIteration.framework.js',
+    codeUrl: '/unityBuild/AnvilsFinalIteration.wasm',
   });
 
   useEffect(() => {
