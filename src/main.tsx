@@ -16,6 +16,10 @@ createRoot(document.getElementById('root')!).render(
       authorizationParams={{
         redirect_uri: window.location.origin
       }}
+      onRedirectCallback={(appState) => {
+        window.history.replaceState({}, document.title, appState?.returnTo || '/');
+      }}
+      cacheLocation="localstorage"
     >
       <App />
     </Auth0Provider>

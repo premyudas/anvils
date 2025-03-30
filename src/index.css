@@ -65,5 +65,36 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+    position: absolute;
   }
+}
+
+.game {
+  width: 960px;   /* or 50%, or 80vw */
+  height: 540px;  /* or auto, or 80vh */
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.home-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 1000; /* make sure it stays on top */
+}
+
+@font-face {
+  font-family: 'Daydream';
+  src: url('./assets/Daydream.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PixelGame';
+  src: url('./assets/PixelGame.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
